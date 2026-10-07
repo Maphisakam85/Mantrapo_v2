@@ -248,6 +248,26 @@
     font-size:0.82rem; color:#8C978F;
   }
   @media (max-width:760px){.footer-grid{grid-template-columns:1fr; gap:28px;}}
+
+
+  /* ===== COMPANY INFORMATION ===== */
+  .company-info-grid{
+    display:grid; grid-template-columns:repeat(2,minmax(0,1fr));
+    border:1px solid var(--rule); background:var(--rule); gap:1px;
+  }
+  .info-item{background:var(--paper); padding:22px 24px;}
+  .info-item.full{grid-column:1 / -1;}
+  .info-label{display:block; color:var(--gold); font-size:.76rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; margin-bottom:7px;}
+  .info-value{color:var(--deep-2); font-size:.98rem; line-height:1.55;}
+  .info-value a{text-decoration:none; border-bottom:1px solid var(--rule);}
+  .info-value a:hover{border-color:var(--gold); color:var(--deep);}
+  @media (max-width:760px){.company-info-grid{grid-template-columns:1fr}.info-item.full{grid-column:auto}}
+
+  /* ===== OWNERSHIP ===== */
+  .ownership-card{border-left:3px solid var(--gold); padding:10px 0 10px 28px; max-width:820px;}
+  .ownership-card p{color:var(--ink-soft); font-size:1.02rem;}
+  .ownership-card p:last-child{margin-bottom:0;}
+
 </style>
 </head>
 <body>
@@ -262,6 +282,7 @@
       <span></span><span></span><span></span>
     </button>
     <ul id="navMenu">
+      <li><a href="#company-info">Company Info</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#values">Values</a></li>
@@ -279,7 +300,7 @@
       <div>
         <div class="eyebrow-line"><span class="dash"></span>Enterprise Development · Business Consulting · Training</div>
         <h1>Our contribution bridges the gap through service to humanity.</h1>
-        <p class="lede">Since 1997, Mantrapro (Pty) Ltd has helped entrepreneurs, corporations, investors and governments across Africa turn ambition into investment-ready, commercially viable enterprises.</p>
+        <p class="lede">Established in 1997, Mantrapro (Pty) Ltd supports entrepreneurs, private companies, investors, government institutions and development organisations across Africa with practical solutions that improve competitiveness, unlock investment opportunities and support long-term economic growth.</p>
         <div class="hero-cta">
           <a href="#contact" class="btn btn-primary">Start a conversation</a>
           <a href="#services" class="btn btn-ghost">What we do</a>
@@ -297,15 +318,39 @@
     </div>
   </section>
 
+
+  <!-- COMPANY INFORMATION -->
+  <section id="company-info" class="shade">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Company information</div>
+        <h2>Mantrapro (Pty) Ltd at a glance</h2>
+        <p>Core company details as set out in the official company profile.</p>
+      </div>
+      <div class="company-info-grid">
+        <div class="info-item"><span class="info-label">Company name</span><div class="info-value">Mantrapro (Pty) Ltd</div></div>
+        <div class="info-item"><span class="info-label">Registration no.</span><div class="info-value">2010/010961/07</div></div>
+        <div class="info-item"><span class="info-label">Business type</span><div class="info-value">Enterprise Development, Business Consulting and Training</div></div>
+        <div class="info-item"><span class="info-label">Year established</span><div class="info-value">1997</div></div>
+        <div class="info-item"><span class="info-label">Founder &amp; Sole Director</span><div class="info-value">Mr. Johannes Moshe</div></div>
+        <div class="info-item"><span class="info-label">Telephone</span><div class="info-value"><a href="tel:+27733870196">+27 73 387 0196</a></div></div>
+        <div class="info-item"><span class="info-label">Email</span><div class="info-value"><a href="mailto:moshe@mantrapro.co.za">moshe@mantrapro.co.za</a></div></div>
+        <div class="info-item"><span class="info-label">Website</span><div class="info-value"><a href="https://www.mantrapro.co.za" target="_blank" rel="noopener">www.mantrapro.co.za</a></div></div>
+        <div class="info-item full"><span class="info-label">Head office</span><div class="info-value">9 Pink Street, Digital Hub Building, Botshabelo Industrial Area, Botshabelo 9781, Free State, South Africa</div></div>
+        <div class="info-item full"><span class="info-label">Postal address</span><div class="info-value">1 Kampfraath Street, Thaba Nchu 9780, Free State, South Africa</div></div>
+      </div>
+    </div>
+  </section>
+
   <!-- ABOUT -->
   <section id="about">
     <div class="wrap about-grid">
       <div>
         <div class="kicker">Background</div>
         <h2 style="font-size:clamp(1.6rem,3vw,2.3rem); margin-bottom:20px;">A South African consultancy built for African markets</h2>
-        <p>Mantrapro (Pty) Ltd is a South African enterprise development and business consulting company established in 1997. We support sustainable economic development by assisting entrepreneurs, private companies, investors, government institutions and development organisations throughout the African continent.</p>
+        <p>Mantrapro (Pty) Ltd is a South African enterprise development and training business consulting company established in 1997. We support sustainable economic development by assisting entrepreneurs, private companies, investors, government institutions and development organisations throughout the African continent.</p>
         <p>Through our consulting expertise, we strengthen governance, improve operational efficiency, prepare investment-ready projects and facilitate strategic partnerships that generate measurable business value — built on international standards, and responsive to the realities of African markets.</p>
-        <p>Founded and led by Mr. Johannes Moshe, who holds 100% of the issued shares and serves as Sole Director, Mantrapro operates under clear strategic leadership and consistent, accountable decision-making.</p>
+        
       </div>
       <div>
         <div class="kicker">Our framework</div>
@@ -323,6 +368,22 @@
             <p>Continuous improvement of operational processes creates measurable economic value and supports long-term growth.</p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- OWNERSHIP -->
+  <section id="ownership" class="tight">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Ownership</div>
+        <h2>Founder-led, privately owned and accountable</h2>
+      </div>
+      <div class="ownership-card">
+        <p>Mantrapro (Pty) Ltd is a privately owned South African company founded by Mr. Johannes Moshe in 1997. The company operates under a single-shareholder ownership structure, with Mr. Johannes Moshe holding 100% of the issued shares and serving as the Sole Director.</p>
+        <p>This structure supports clear strategic leadership, efficient decision-making and consistent implementation of the company's long-term objectives. Mr. Moshe remains actively involved in strategic planning, client engagement, investment facilitation and business expansion initiatives.</p>
+        <p>The ownership model reflects Mantrapro's commitment to accountability, corporate governance and long-term business sustainability while supporting its vision of inclusive economic development throughout Africa.</p>
       </div>
     </div>
   </section>
@@ -375,7 +436,7 @@
       <div class="section-head">
         <div class="kicker">Products &amp; services</div>
         <h2>Specialised support across the business lifecycle</h2>
-        <p>Every engagement is tailored to the specific commercial objectives and operational challenges of each client — from entrepreneurs and SMEs to corporations, government institutions and investors.</p>
+        <p>Mantrapro provides specialised enterprise development and business consulting services designed to improve the competitiveness and sustainability of businesses across diverse sectors. Every engagement is tailored to the client’s commercial objectives and operational challenges.</p>
       </div>
       <div class="services-list">
         <div class="service-row">
@@ -388,7 +449,7 @@
         </div>
         <div class="service-row">
           <div class="idx">03</div>
-          <div><h4>Mergers &amp; Acquisitions — Seller Side</h4><p>Promotion and facilitation of mergers and acquisitions on behalf of the selling party.</p></div>
+          <div><h4>Mergers &amp; Acquisition Promotion and Facilitation (Seller Side)</h4><p>Promotion and facilitation of mergers and acquisitions on behalf of the selling party.</p></div>
         </div>
         <div class="service-row">
           <div class="idx">04</div>
@@ -483,7 +544,7 @@
     <div class="split-card">
       <div class="kicker">Growth &amp; partnerships</div>
       <h3 style="font-size:1.4rem; margin-bottom:12px;">Built on collaboration</h3>
-      <p>We build long-term strategic partnerships with commercial banks, development finance institutions, private equity and venture capital funds, governments, universities and technical partners — accelerating enterprise development and strengthening industrial competitiveness.</p>
+      <p>We build long-term strategic partnerships with commercial banks, development finance institutions, private equity firms, venture capital funds, sovereign wealth funds, institutional investors, export credit agencies and international development organisations. We also pursue alliances with government institutions, municipalities, universities, research organisations, industry associations, multinational corporations and technical partners.</p>
     </div>
   </div>
 
@@ -493,7 +554,7 @@
       <div>
         <div class="kicker">Since 1997</div>
         <h2>A trusted partner for business growth, investment facilitation and operational excellence.</h2>
-        <p>With an unwavering focus on People, Product and Process, Mantrapro remains dedicated to creating measurable economic value and contributing meaningfully to Africa's long-term prosperity.</p>
+        <p>With an unwavering focus on People, Product and Process, Mantrapro remains dedicated to creating measurable economic value, building resilient enterprises, promoting responsible investment and contributing meaningfully to Africa's long-term prosperity.</p>
       </div>
       <a href="#contact" class="btn btn-primary" style="background:var(--gold); color:var(--deep-2);">Get in touch</a>
     </div>
@@ -516,13 +577,14 @@
       <ul>
         <li><a href="mailto:moshe@mantrapro.co.za">moshe@mantrapro.co.za</a></li>
         <li><a href="tel:+27733870196">+27 73 387 0196</a></li>
-        <li><a href="http://www.mantrapro.co.za" target="_blank" rel="noopener">www.mantrapro.co.za</a></li>
+        <li><a href="https://www.mantrapro.co.za" target="_blank" rel="noopener">www.mantrapro.co.za</a></li>
       </ul>
     </div>
     <div>
-      <h5>Offices</h5>
+      <h5>Addresses</h5>
       <ul>
-        <li>9 Pink Street, Digital Hub Building, Botshabelo Industrial Area, Botshabelo 9781, Free State, South Africa</li>
+        <li><strong style="color:var(--paper);font-weight:600;">Head office:</strong><br>9 Pink Street, Digital Hub Building, Botshabelo Industrial Area, Botshabelo 9781, Free State, South Africa</li>
+        <li><strong style="color:var(--paper);font-weight:600;">Postal:</strong><br>1 Kampfraath Street, Thaba Nchu 9780, Free State, South Africa</li>
       </ul>
     </div>
   </div>
