@@ -1,15 +1,15 @@
 ﻿/* Shared presentation for all Mantrapro pages.
    Brand colours extracted from the company profile PDF. */
 :root {
-  --navy: #0f2a45;
-  --navy-secondary: #1b3a5c;
-  --blue: #2e74b5;
-  --gold-light: #d9b96a;
-  --ink: #1b3a5c;
-  --muted: #5a6472;
-  --gold: #b8892b;
-  --paper: #f2f3f5;
-  --line: #d8dce1;
+  --navy: #0B2B2C;
+  --navy-secondary: #10393B;
+  --blue: #10393B;
+  --gold-light: #D9B26B;
+  --ink: #1C1B17;
+  --muted: #4A473E;
+  --gold: #B9852E;
+  --paper: #F6F3EC;
+  --line: #D8D2C0;
   --width: 1160px;
 }
 * { box-sizing: border-box; }
@@ -176,9 +176,9 @@ h1 { font-size: clamp(38px, 5vw, 66px); text-transform: uppercase; line-height: 
 h2 { font-size: clamp(27px, 3vw, 39px); line-height: 1.1; }
 a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid var(--gold-light); outline-offset: 5px; }
 .container { width: min(var(--width), calc(100% - 80px)); }
-.utility { background: var(--navy); border-bottom: 1px solid #d8dce130; }
+.utility { background: var(--navy); border-bottom: 1px solid #D8D2C030; }
 .utility-inner { font-size: 12px; }
-.header { border-bottom: 1px solid #d8dce130; }
+.header { border-bottom: 1px solid #D8D2C030; }
 .header-inner { min-height: 88px; }
 .brand-name { color: var(--gold-light); font-size: 24px; }
 .brand-description { color: var(--line); font-size: 10px; }
@@ -186,7 +186,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .nav a[aria-current='page'] { color: var(--gold-light); font-weight: 400; }
 .nav a:last-child { background: var(--paper); color: var(--navy); padding: 8px 14px; border-color: transparent; }
 .nav a:last-child[aria-current='page'] { background: var(--gold-light); }
-.menu-toggle { background: transparent; color: var(--paper); border-color: #d8dce160; }
+.menu-toggle { background: transparent; color: var(--paper); border-color: #D8D2C060; }
 .eyebrow { color: var(--gold-light); font-size: 11px; }
 .lead, .prose, dd, .contact-person span, .contact-help, .intro-text { color: var(--line); }
 .text-link { color: var(--paper); border-color: var(--gold-light); }
@@ -197,14 +197,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .button.secondary:hover { background: var(--navy-secondary); }
 .section { padding-block: 90px; }
 .soft, .page-intro, .fact-panel, .address-panel { background: var(--navy-secondary); }
-.page-intro { border-color: #d8dce130; padding: 70px 0; }
+.page-intro { border-color: #D8D2C030; padding: 70px 0; }
 .page-intro h1 { max-width: 900px; }
 .page-intro .lead { max-width: 730px; }
 .prose h2 { font-size: 27px; }
 dt, .service-audience, .contact-link { color: var(--paper); }
 .fact-panel dt, .service-index, .service-view, .jump-link, .prose .scope { color: var(--line); }
 .fact-panel h2 { color: var(--paper); }
-.service-jump, .service-detail, .values-list > div, .address-panel { border-color: #d8dce140; }
+.service-jump, .service-detail, .values-list > div, .address-panel { border-color: #D8D2C040; }
 .service-jump { gap: 12px 25px; }
 .jump-link { border-color: var(--gold); }
 .service-detail h2 { text-transform: uppercase; font-size: 31px; }
@@ -212,10 +212,10 @@ dt, .service-audience, .contact-link { color: var(--paper); }
 .pillars h2 { font-size: 28px; }
 .pillars p:not(.eyebrow), .two-columns p:not(.eyebrow), .address-panel address { color: var(--line); }
 .address-panel { padding: 35px; border-left: 2px solid var(--gold); }
-.enquiry { background: var(--navy-secondary); padding: 55px 0; border-color: #d8dce130; }
+.enquiry { background: var(--navy-secondary); padding: 55px 0; border-color: #D8D2C030; }
 .enquiry h2 { font-size: 36px; }
 .enquiry p { color: var(--line); }
-.footer { border-top: 1px solid #d8dce130; background: var(--navy-secondary); padding-top: 55px; }
+.footer { border-top: 1px solid #D8D2C030; background: var(--navy-secondary); padding-top: 55px; }
 .footer-brand { font-size: clamp(30px, 4vw, 52px); font-weight: 400; letter-spacing: -1px; }
 .footer h2 { color: var(--gold-light); font-size: 12px; text-transform: uppercase; }
 /* Home page composition mirrors the reference's photographic opening and card rhythm. */
@@ -223,7 +223,7 @@ dt, .service-audience, .contact-link { color: var(--paper); }
 .home-page .header { position: relative; z-index: 2; background: var(--navy); }
 .template-hero { position: relative; min-height: 570px; isolation: isolate; }
 .hero-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% center; z-index: -2; }
-.hero-tint { position: absolute; inset: 0; background: #0f2a45b8; z-index: -1; }
+.hero-tint { position: absolute; inset: 0; background: #0B2B2Cb8; z-index: -1; }
 .hero-content { padding-top: 120px; padding-bottom: 50px; }
 .hero-facts { display: flex; gap: 50px; margin-bottom: 80px; }
 .hero-facts strong { display: block; font-size: 22px; font-weight: 400; line-height: 1.3; }
@@ -238,7 +238,7 @@ dt, .service-audience, .contact-link { color: var(--paper); }
 .capability-card { background: var(--navy-secondary); padding: 25px; min-height: 280px; display: flex; flex-direction: column; align-items: start; border: 1px solid transparent; }
 .capability-card:hover { text-decoration: none; border-color: var(--gold); }
 .capability-contact:hover { border-color: transparent; }
-.card-number { color: #d8dce1a6; font-size: 12px; }
+.card-number { color: #D8D2C0a6; font-size: 12px; }
 .capability-card h3 { margin-top: 45px; margin-bottom: 28px; font-size: 23px; line-height: 1.15; }
 .capability-card p { margin-top: auto; color: var(--line); font-size: 14px; line-height: 1.6; }
 .capability-card .text-link { margin-top: 18px; font-size: 12px; }
@@ -259,7 +259,7 @@ dt, .service-audience, .contact-link { color: var(--paper); }
 .priorities h2 { font-size: 35px; }
 .faq-layout { display: grid; grid-template-columns: 1fr 1.4fr; gap: 80px; }
 .faq-layout h2 { font-size: 30px; }
-.faq-list details { border-bottom: 1px solid #d8dce140; padding: 20px 0; }
+.faq-list details { border-bottom: 1px solid #D8D2C040; padding: 20px 0; }
 .faq-list details:first-child { padding-top: 0; }
 .faq-list summary { cursor: pointer; font-size: 14px; text-transform: uppercase; line-height: 1.6; }
 .faq-list details p { margin-top: 15px; color: var(--line); font-size: 14px; padding-right: 20px; }
