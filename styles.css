@@ -1,7 +1,7 @@
 ﻿/* Shared presentation for all Mantrapro pages.
    Brand colours extracted from the company profile PDF. */
 :root {
-  --navy: #0B2B2C;
+  --navy: #10393B;
   --navy-secondary: #10393B;
   --blue: #10393B;
   --gold-light: #D9B26B;
@@ -312,4 +312,56 @@ dt, .service-audience, .contact-link { color: var(--paper); }
   .hero-facts { gap: 12px; }
   .hero-facts strong { font-size: 16px; }
   .brand-name { font-size: 21px; }
+}
+
+/* Colour balance: warm ivory surfaces, corporate teal features, muted gold accents. */
+body { background: var(--paper); color: var(--ink); }
+main { background: var(--paper); }
+h1, h2, h3 { color: var(--navy); }
+.utility, .header, .home-page .header { background: var(--navy); color: var(--paper); }
+.brand-name, .footer-brand { color: var(--gold); }
+.brand-description { color: var(--paper); }
+.nav a { color: var(--paper); }
+.nav a[aria-current='page'] { color: var(--gold); border-color: var(--gold); }
+.nav a:last-child, .nav a:last-child[aria-current='page'] { background: var(--gold); color: var(--navy); }
+.menu-toggle { color: var(--paper); border-color: var(--gold); }
+.eyebrow { color: var(--navy); }
+.lead, .prose, dd, .contact-person span, .contact-help, .intro-text { color: var(--muted); }
+.text-link { color: var(--navy); border-color: var(--gold); }
+.text-link:hover { border-color: var(--navy); }
+.button, .button:hover { background: var(--gold); border-color: var(--gold); color: var(--navy); }
+.button.secondary { background: transparent; color: var(--navy); border-color: var(--gold); }
+.button.secondary:hover { background: var(--gold); }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline-color: var(--gold); }
+.soft, .page-intro, .fact-panel, .address-panel, .service-context { background: var(--paper); }
+.page-intro, .service-jump, .service-detail, .values-list > div, .address-panel { border-color: var(--line); }
+dt, .service-audience, .contact-link, .fact-panel h2 { color: var(--navy); }
+.fact-panel dt, .service-index, .service-view, .jump-link, .prose .scope { color: var(--muted); }
+.pillars p:not(.eyebrow), .two-columns p:not(.eyebrow), .address-panel address { color: var(--muted); }
+.hero-tint { background: #10393Bb8; }
+.hero-bottom h1, .hero-summary { color: var(--paper); }
+.hero-bottom .eyebrow, .hero-facts strong { color: var(--gold); }
+.hero-facts span { color: var(--paper); }
+.capability-card { background: #ECE7D9; }
+.card-number { color: var(--gold); }
+.capability-card p { color: var(--muted); }
+.company-feature-copy { background: var(--navy); color: var(--paper); }
+.company-feature-copy h2 { color: var(--paper); }
+.company-feature-copy .eyebrow { color: var(--gold); }
+.feature-description { color: var(--paper); }
+.company-feature-copy .text-link { color: var(--paper); }
+.foundation-grid article { background: #ECE7D9; }
+.foundation-grid p { color: var(--muted); }
+.foundation-grid .eyebrow { color: var(--navy); }
+.priorities, .enquiry { background: var(--navy); color: var(--paper); border-color: var(--line); }
+.priorities h2, .enquiry h2 { color: var(--paper); }
+.priorities .eyebrow { color: var(--gold); }
+.priorities .prose, .priorities .text-link, .enquiry p { color: var(--paper); }
+.faq-list details { border-color: var(--line); }
+.faq-list details p { color: var(--muted); }
+.footer { background: var(--navy); color: var(--paper); border-color: var(--line); }
+.footer h2 { color: var(--gold); }
+.skip-link { background: var(--paper); color: var(--navy); }
+@media (min-width: 1000px) {
+  .home-page .header { background: transparent; }
 }
